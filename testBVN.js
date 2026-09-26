@@ -19,4 +19,4 @@ const checkBvn = async (bvn) => {
    
 }
 
-checkBvn("12345671111");
+checkBvn("22245678777");

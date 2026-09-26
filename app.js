@@ -20,7 +20,7 @@ const accountBalanceRoute = require('./Routes/accountBalanceRoutes');
 const fundTransfer = require('./Routes/fundTransferRoutes');
 const transactionRoute = require('./Routes/transactionRoutes');
 const getAllAccountsRoute = require('./Routes/getAllAccountsRoutes');
-
+const webhookRoutes = require('./Routes/webhookRoutes');
 
 
 
@@ -33,6 +33,7 @@ app.use('/account', accountRoute);
 app.use('/account', accountConfirmRoute);
 app.use('/account', accountBalanceRoute)
 app.use('/account', fundTransfer);
+app.use('/webhooks', webhookRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
